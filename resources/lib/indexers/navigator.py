@@ -71,6 +71,9 @@ class navigator:
 
 
     def movies(self, lite=False):
+        self.addDirectoryItem(32010, 'movieSearch', 'search.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32028, 'moviePerson', 'people-search.png', 'DefaultMovies.png')
+
         self.addDirectoryItem(32011, 'movieGenres', 'genres.png', 'DefaultMovies.png')
         self.addDirectoryItem(32012, 'movieYears', 'years.png', 'DefaultMovies.png')
         self.addDirectoryItem(32013, 'moviePersons', 'people.png', 'DefaultMovies.png')
@@ -88,8 +91,6 @@ class navigator:
             if not control.setting('lists.widget') == '0':
                 self.addDirectoryItem(32003, 'mymovieliteNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
 
-            self.addDirectoryItem(32028, 'moviePerson', 'people-search.png', 'DefaultMovies.png')
-            self.addDirectoryItem(32010, 'movieSearch', 'search.png', 'DefaultMovies.png')
 
         self.endDirectory()
 
@@ -130,6 +131,9 @@ class navigator:
 
 
     def tvshows(self, lite=False):
+        self.addDirectoryItem(32010, 'tvSearch', 'search.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32028, 'tvPerson', 'people-search.png', 'DefaultTVShows.png')
+
         self.addDirectoryItem(32011, 'tvGenres', 'genres.png', 'DefaultTVShows.png')
         self.addDirectoryItem(32015, 'tvCertificates', 'certificates.png', 'DefaultTVShows.png')
         self.addDirectoryItem(32016, 'tvNetworks', 'networks.png', 'DefaultTVShows.png')
@@ -147,8 +151,7 @@ class navigator:
             if not control.setting('lists.widget') == '0':
                 self.addDirectoryItem(32004, 'mytvliteNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
 
-            self.addDirectoryItem(32028, 'tvPerson', 'people-search.png', 'DefaultTVShows.png')
-            self.addDirectoryItem(32010, 'tvSearch', 'search.png', 'DefaultTVShows.png')
+
 
         self.endDirectory()
 
